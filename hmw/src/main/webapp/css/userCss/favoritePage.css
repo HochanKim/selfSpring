@@ -1,0 +1,181 @@
+#container{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'NanumSquareAcr';
+    min-height: calc(100vh - 372px);
+}
+
+#contents{
+    margin: 0 auto;
+    max-width: 1150px;
+    padding: 0 80px;
+}
+
+.tit{
+    transform: translate(0, 0);
+    opacity: 1.0;
+    min-height: 30px;
+    margin: 30px 0 60px;
+    text-align: center;
+}
+
+h2{
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    font-family: 'NanumSquareAcb';
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-top: 2px solid #d6d6d6;
+    border-bottom: 1px solid #e6e6e6;
+    border-spacing: 0;
+}
+
+th{
+    padding: 11px 0 10px;
+    background: #fafafa;
+    color: #666;
+    line-height: 18px;
+}
+
+tr{
+    text-align: center;
+}
+
+td{
+    padding-left: 20px;
+    text-align: left;
+    padding: 30px 5px;
+    color: #333;
+    border-top: 1px solid #e6e6e6;
+    line-height: 18px;
+}
+
+.product{
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+.productInfo{
+    display: flex;
+    align-items: center;
+}
+
+.thum{
+    float: left;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+img{
+    width: auto !important;
+    max-width: 85px;
+    /* height: auto !important; */
+    max-height: 85px;
+    border: 0;
+    vertical-align: top;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+}
+
+productName{
+    float: left;
+    width: 66%;
+    text-align: left;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.price{
+    padding: 30px 5px;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+strong{
+    display: block;
+    color: #222;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.state{
+    padding: 30px 5px;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+}
+
+.delBtn{
+    min-width: 75px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #7B4BBF;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* 페이징 */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:40px;
+    margin:40px 0;
+}
+
+#pagination .pageBtn, button, .pagination button:disabled {
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 50px;
+    margin: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999;
+    font-size:14px;
+}
+button {
+    border:none;
+    font-size:18px;
+}
+
+#pagination button:hover, #pagination button.active {
+    transition: 0.5s;
+    background-color: #7b4bbf;
+    font-weight: bold;
+    color:#fff;
+}
+
+.pagination button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+    border: 1px solid #dee2e6;
+}
+
+

@@ -1,0 +1,403 @@
+/* 공통 영역 */
+#app, #container {
+    margin:0 auto;
+    width:88%;
+}
+
+p {
+    margin:10px 0;
+    display:flex;
+    align-items:center; 
+}
+
+
+/* 카테고리 영역 */
+.selectSection {
+    width:70%;
+    margin:0 auto;
+    padding:40px 80px 10px 80px;
+}
+.productsListSelect a, .productsPartList a {
+    text-decoration: none;
+    color:#000;
+    display: inline-block;
+}
+.productsListSelect a {
+    margin-right:20px;
+    margin-bottom:12px;
+    font-size:24px;
+}
+.productsPartList a {
+    margin-right:14px;
+    font-size: 18px;
+}
+.selected {
+    font-weight: bold;
+    color: rgb(255, 115, 0);
+}
+
+
+/* 분류코드 리스트 */
+.kindList {
+    height:20px;
+    margin-bottom:10px;
+    display: flex;
+    align-items: center;
+}
+.kindList label {
+    margin-right:16px;
+    display: flex;
+    align-items: center;
+}
+.traditionCodes {
+    margin-top:10px;
+}
+select {
+    margin-right:10px;
+	margin-bottom: 10px;
+    width:120px;
+    text-align: center;
+}
+.materialList {
+    width:150px;
+}
+input {
+    margin-right:7px;
+}
+
+.wineSelect {
+    width:110px;
+}
+
+
+/* 상품 리스트 영역 */
+.productContainer {
+    width:74%;
+    padding:0 84px;
+    box-sizing: border-box;
+    margin: 0 auto 168px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productContainer > div {
+    width:235px;
+    height:480px;
+    margin:12px;
+}
+
+ul {
+    display: inline-block;
+    width:22%;
+    margin:12px;
+    padding:0;
+}
+
+.productList {
+    list-style:none;
+}
+
+.productList > a {
+    text-decoration: none;
+    color:#000;
+}
+.productList a > div { 
+    box-sizing: border-box;
+}
+
+    /* 상품명 */
+.productName {
+    font-size:20px;
+    font-family: 'NanumSquareAcb';
+    margin:10px 0;
+    height:50px;
+}
+
+    /* 상품가격 */
+.priceSection {
+    height:55px;
+}
+.price {
+    font-size:20px;
+    font-weight: bold;
+}
+.discount {
+    color: rgb(255, 115, 0); 
+    font-size:16px; 
+    margin-right:5px;
+}
+.mini {
+    font-size:14px;
+    font-weight:500;
+    margin-left:3px;
+}
+    /* 기타 상품정보 */
+.madeBy {
+    margin-left:0;
+    margin-right:10px;
+    font-family: 'NanumSquareAcr';
+}
+
+.title {
+    margin:0;
+}
+.grade {
+    margin-left:0;
+    margin-right:15px;
+}
+.avg {
+    font-weight: bold;
+    font-size:18px;
+}
+.count {
+    color:#777;
+}
+
+
+/* 이미지 */
+.img-wrap {
+    width:235px;
+    height:235px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.img-wrap img {
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+}
+
+img:hover {
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.5s;
+}
+
+.productGrade img, .material img {
+    width:24px;
+    height:24px;
+    margin-right:5px;
+}
+
+.material-symbols-outlined {
+    margin-right:5px;
+}
+.material-symbols-outlined:hover {
+    transform: scale(1.1, 1.1); 
+    transition-duration: 0.1s;
+}
+
+
+/* 와인 픽업 페이지 */
+.productName.wine {
+    font-size: 19px;
+}
+.material, .alcohol {
+    font-weight: 700;
+}
+
+
+/* 공동구매 페이지 css */
+.groupSellTitle {
+    width:70%;
+    margin:0 auto;
+}
+.margin16 {
+    margin: 16px;
+}
+
+.groupSellImage {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 16px;
+}
+
+.title {
+    margin-right: 10px;
+}
+
+#sortBox {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 16px;
+}
+
+#cardView {
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 16px;
+    padding: 8px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(146, 146, 146);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "area1 area2 area2 area2";
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px rgb(146, 146, 146);
+    cursor: pointer;
+}
+
+.area1 {
+    grid-area: area1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area2 {
+    grid-area: area2;
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.line1 .title {
+    margin: 0px;
+    margin-bottom: 8px;
+    font-size:24px;
+}
+
+.area2 .line2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line3 .progressBar {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.line3 .progress {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    background-color: #7b4bbf;
+    border-radius: 5px;
+}
+
+.area2 .line4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cell2 .joinBtn {
+    margin: 16px;
+}
+
+.groupSellImage {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 16px;
+}
+
+
+/* 구독 페이지 CSS */
+.subscribeCont {
+    width:70%;
+    margin: 0 auto;
+}
+.subscribe {
+    padding: 0 20px;
+    display: flex;
+    margin-top :40px;
+    margin-bottom : 108px;
+}
+.subscribeImg {
+    display: inline-block;
+    width:400px;
+    height:400px;
+}
+.subscribeTitle {
+    font-size:40px;
+}
+.subscribeInfo {
+    display: inline;
+    float: right;
+    margin-left: 50px;
+    box-sizing: border-box;
+    padding:20px 0;
+}
+.subscribeInfo div {
+    margin-bottom : 24px;
+}
+.subscribeReview {
+    width:120px;
+    font-weight: bold;
+    margin-left:0;
+    margin-top:30px;
+}
+.subscribeReview:hover {
+    transition: 0.3s;
+    background-color: #7b4bbf;
+    font-weight: bold;
+    color:#fff;
+}
+
+
+/* 페이징 */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:40px;
+    margin:40px 0;
+}
+
+#pagination .pageBtn, button, .pagination button:disabled {
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 50px;
+    margin: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999;
+    font-size:14px;
+}
+button {
+    border:none;
+    font-size:18px;
+}
+
+#pagination button:hover, #pagination button.active {
+    transition: 0.5s;
+    background-color: #7b4bbf;
+    font-weight: bold;
+    color:#fff;
+}
+
+.pagination button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+    border: 1px solid #dee2e6;
+}
+

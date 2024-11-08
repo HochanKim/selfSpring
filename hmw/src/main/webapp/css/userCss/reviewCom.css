@@ -1,0 +1,446 @@
+#container{
+    width: 100%;
+    min-width: 1020px;
+    font-family: 'NanumSquareAcr';
+    color: #222;
+    min-height: calc(100vh - 372px);
+}
+
+#contents{
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#inside{
+    margin: 0;
+    padding: 0 0 20px;
+    display: block;
+}
+
+#tit{
+    transform: translate(0, 0);
+    opacity: 1.0;
+    min-height: 30px;
+    margin: 30px 0 60px;
+    text-align: center;
+}
+
+h2{
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    font-family: 'NanumSquareAcb';
+}
+
+#stateReview{
+    display: flex;
+    padding: 0 0 15px;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.com{
+    margin-left: 40px;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-top: 2px solid #d6d6d6;
+    border-bottom: 1px solid #e6e6e6;
+    border-spacing: 0;
+    margin: 10px 0 0;
+}
+
+th{
+    padding: 13px 0 12px;
+    font-size: 16px;
+    font-weight: 600px;
+    letter-spacing: 0.1em;
+    border-left: 0;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fafafa;
+}
+
+tr td {
+    padding: 30px 5px;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.product{
+    padding-left: 20px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.reviewArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewArea2 {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+img{
+    float: left;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+span{
+    display: inline-block;
+    width: 66%;
+    vertical-align: middle;
+}
+
+.productName{
+    width: 66%;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.writeBtn{
+    width: 90px;
+    height: 45px;
+    line-height: 28px;
+    border: 1px solid #dadde0;
+    border-radius: 4px;
+    background-color: #7B4BBF;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.modal-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-container {
+    position: relative;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0 33px;
+    height: 85%;
+  }
+
+  h1{
+    padding-top: 36px;
+    padding: 30px 0 15px;
+    border-bottom: 2px solid #000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .productInfo{
+    padding: 25px 10px;
+  }
+
+.thum{
+    position: relative;
+    float: left;
+    width: 85px;
+    height: 85px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+.insideImg{
+    width: 85px;
+    height: 85px;
+    border: 0;
+    vertical-align: top;
+  }
+
+.wrtie{
+    border-top: 2px solid #ddd;
+    list-style: none;
+  }
+
+
+.modal-btn{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+button{
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    border: 1px solid #999;
+    cursor: pointer;
+  }
+
+#rating{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 30px 0 20px
+}
+
+.txtWrapper {
+    text-align: left;
+}
+
+.txtArea{
+    padding-right: 20px;
+    overflow: hidden; /* 내용이 넘치지 않도록 */
+}
+
+.txt{
+    text-align: left;
+    padding-top: 20px;
+}
+
+.txtInner{
+    position: relative;
+    padding: 15px 0 35px;
+    height: 230px;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: white;
+    padding: 14px;
+    outline: none;
+    border: 1px solid #666;
+    border-radius: 5px;
+    resize: none;
+}
+
+.photoTit{
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.inputPhoto{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px dashed rgba(61, 61, 61, 0.3);
+    border-radius: 5px;
+}
+
+.photoImgArea{
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.photoImg{
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.how{
+    margin-bottom: 20px;
+}
+.star-box {
+    display: flex;
+    width: 100%;
+}
+
+.star #r1:checked ~ .star-box label:nth-child(-n+1) {
+    background-image: url(../../image/star.png)}
+.star #r2:checked ~ .star-box label:nth-child(-n+2) {
+    background-image: url(../../image/star.png)}
+.star #r3:checked ~ .star-box label:nth-child(-n+3) {
+    background-image: url(../../image/star.png)}
+.star #r4:checked ~ .star-box label:nth-child(-n+4) {
+    background-image: url(../../image/star.png)}
+.star #r5:checked ~ .star-box label:nth-child(-n+5) {
+    background-image: url(../../image/star.png);
+}
+
+label {
+    display: block;
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    background: url(../../image/empty.png) no-repeat center;
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    display: none;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
+}
+
+.score{
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.modal-btn{
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.modalClose{
+    background-color: #fff;
+    border-color: #999;
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 5px;
+    line-height: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.reviewRegis{
+    background-color: #999;
+    color: #fff;
+    border-color: #999;
+    margin-left: 5px;
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    border: 1px solid #999;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="file"]{
+    display: none; 
+    cursor: default;
+}
+
+.star_test {
+    display: flex;
+    font-size: 0;
+}
+
+.star_test label {
+    width: 60px; height: 60px;
+    background: url(../../image/emptystar.png) no-repeat center;
+    background-size: 60px;
+    display: block; cursor: pointer;
+}
+
+.star_test #star1:checked .star_img label:nth-of-type(1) {
+    background-image: url(../../image/star.png);
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:40px;
+    margin:40px 0;
+}
+
+#pagination .pageBtn, button, .pagination button:disabled {
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 50px;
+    margin: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999;
+    font-size:14px;
+}
+button {
+    border:none;
+    font-size:18px;
+}
+
+#pagination button:hover, #pagination button.active {
+    transition: 0.5s;
+    background-color: #7b4bbf;
+    font-weight: bold;
+    color:#fff;
+}
+
+.pagination button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+    border: 1px solid #dee2e6;
+}

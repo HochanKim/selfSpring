@@ -1,0 +1,57 @@
+#footer {
+    text-align: left;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    border-top: 1px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NanumSquareAcr';
+}
+
+#footer #footerContainer {
+    width: 50%;
+    height: 100%;
+}
+
+#footerContainer .companyName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: 'NanumSquareAceb';
+}
+
+#footerContainer .phone {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+#footerContainer .phoneDetail {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#footerContainer .reader {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+#footerContainer .address {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #555;
+}
+
+#footerContainer .copyright {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #aaa;
+}
